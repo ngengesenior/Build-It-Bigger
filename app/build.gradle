@@ -6,7 +6,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.2'
+
 
     }
 }
@@ -19,6 +19,10 @@ android {
 
     useLibrary 'android.test.base'
     useLibrary 'android.test.mock'
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
         minSdkVersion 19
@@ -49,6 +53,14 @@ android {
         paid {
 
             applicationId "com.udacity.gradle.builditbigger.paid"
+        }
+    }
+    sourceSets {
+        free {
+            manifest.srcFile 'src/free/AndroidManifest.xml'
+        }
+        paid {
+            manifest.srcFile 'src/paid/AndroidManifest.xml'
         }
     }
 }

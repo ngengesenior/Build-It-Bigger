@@ -15,7 +15,7 @@ import java.io.IOException;
 
 class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
     private static MyApi myApiService = null;
-    private Context context;
+    //private Context context;
     private JokeRetrieveListener jokeRetrieveListener;
 
     public EndpointsAsyncTask(JokeRetrieveListener jokeRetrieveListener) {
@@ -42,8 +42,6 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
             myApiService = builder.build();
         }
 
-        context = params[0].first;
-        String name = params[0].second;
 
         try {
             return myApiService.getAllJokes().execute().getJokes().toString();

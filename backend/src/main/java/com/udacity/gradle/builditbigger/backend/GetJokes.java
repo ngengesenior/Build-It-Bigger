@@ -15,4 +15,12 @@ public class GetJokes {
     public void setJoke(String joke) {
         this.joke = joke;
     }
+
+    public List<String> getJokes() {
+        return jokes;
+    }
+
+    public String getJoke() {
+        return joke;
+    }
 }

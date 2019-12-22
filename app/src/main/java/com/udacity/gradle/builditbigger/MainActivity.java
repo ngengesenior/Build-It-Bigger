@@ -5,14 +5,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.ngenge.apps.jokes_display_library.JokesDisplayActivity;
-import com.udacity.gradle.jokes.Joker;
-
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -49,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view) {
+    /*public void tellJoke(View view) {
         //Toast.makeText(this, "derp", Toast.LENGTH_SHORT).show();
 
         Toast.makeText(this,Joker.getJokes().get(0),Toast.LENGTH_LONG).show();
-    }
+    }*/
 
 
     public void tellAJoke(View view) {

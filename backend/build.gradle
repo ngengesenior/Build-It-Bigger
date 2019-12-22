@@ -1,15 +1,15 @@
 // If you would like more information on the gradle-appengine-plugin please refer to the github page
 // https://github.com/GoogleCloudPlatform/gradle-appengine-plugin
 
-buildscript {
+/*buildscript {
     repositories {
         jcenter()
     }
     dependencies {
-        classpath 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.3'
-        classpath 'com.google.cloud.tools:appengine-gradle-plugin:1.3.5'
+        *//*classpath 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.3'
+        classpath 'com.google.cloud.tools:appengine-gradle-plugin:1.3.5'*//*
     }
-}
+}*/
 
 repositories {
     jcenter()

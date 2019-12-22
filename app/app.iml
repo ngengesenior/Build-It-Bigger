@@ -203,5 +203,9 @@
     <orderEntry type="library" name="Gradle: android.test.mock-android-29" level="project" />
     <orderEntry type="library" name="Gradle: android.test.base-android-29" level="project" />
     <orderEntry type="library" name="Gradle: android.test.runner-android-29" level="project" />
+    <orderEntry type="module" module-name="jokes_display_library" />
+    <orderEntry type="module" module-name="javaJokes" />
+    <orderEntry type="module" module-name="jokes_display_library" />
+    <orderEntry type="module" module-name="javaJokes" />
   </component>
 </module>
