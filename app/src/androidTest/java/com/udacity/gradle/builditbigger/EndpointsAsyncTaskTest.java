@@ -38,7 +38,6 @@ public class EndpointsAsyncTaskTest {
 
             @Override
             protected void onPostExecute(String result) {
-                assertNotNull(result);
                 if (result != null) {
                     assertTrue(result.length() > 0);
                     countDownLatch.countDown();
@@ -50,6 +49,7 @@ public class EndpointsAsyncTaskTest {
 
         asyncTask.execute(context).get();
 
+        assertNotNull(randomJoke);
         countDownLatch.await();
 
     }
