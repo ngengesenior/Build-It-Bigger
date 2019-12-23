@@ -1,0 +1,16 @@
+Dec 24, 2019 12:33:45 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value '/usr/lib/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/config/sdk/logging.properties' with value 'WEB-INF/logging.properties' from '/home/senior/Desktop/ud867-master/FinalProject/backend/build/exploded-backend/WEB-INF/appengine-web.xml'
+2019-12-24 00:33:46.080:INFO::main: Logging initialized @1296ms to org.eclipse.jetty.util.log.StdErrLog
+2019-12-24 00:33:46.127:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+2019-12-24 00:33:46.799:INFO:oejs.Server:main: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_202-release-1483-b49-5587405
+2019-12-24 00:33:47.515:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@368247b9{/,file:///home/senior/Desktop/ud867-master/FinalProject/backend/build/exploded-backend/,AVAILABLE}{/home/senior/Desktop/ud867-master/FinalProject/backend/build/exploded-backend}
+2019-12-24 00:33:47.516:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2019-12-24 00:33:47.516:INFO:oejs.session:main: node0 Scavenging disabled
+2019-12-24 00:33:47.524:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@56235b8e{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2019-12-24 00:33:47.525:INFO:oejs.Server:main: Started @2741ms
+Dec 23, 2019 11:33:47 PM com.google.appengine.tools.development.AbstractModule startup
+INFO: Module instance default is running at http://localhost:8080/
+Dec 23, 2019 11:33:47 PM com.google.appengine.tools.development.AbstractModule startup
+INFO: The admin console is running at http://localhost:8080/_ah/admin
+Dec 24, 2019 12:33:47 AM com.google.appengine.tools.development.DevAppServerImpl doStart
+INFO: Dev App Server is now running

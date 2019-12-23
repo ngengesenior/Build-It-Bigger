@@ -60,6 +60,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("JOKES",jokes);
                 startActivity(intent);
             }
-        }).execute();
+        }).execute(MainActivity.this);
     }
 }

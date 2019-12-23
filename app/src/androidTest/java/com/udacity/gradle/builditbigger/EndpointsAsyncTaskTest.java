@@ -1,5 +1,8 @@
 package com.udacity.gradle.builditbigger;
 
+import android.content.Context;
+
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import org.junit.Test;
@@ -7,7 +10,6 @@ import org.junit.runner.RunWith;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -16,11 +18,14 @@ import static org.junit.Assert.assertTrue;
 public class EndpointsAsyncTaskTest {
 
     String randomJoke;
+    Context context;
     @Test
     public void testAndRetrieveJoke() throws ExecutionException, InterruptedException {
 
         final CountDownLatch countDownLatch = new CountDownLatch(1);
 
+
+        context = InstrumentationRegistry.getInstrumentation().getContext();
         JokeRetrieveListener jokeRetrieveListener = new JokeRetrieveListener() {
             @Override
             public void onJokesRetrieved(String jokes) {
@@ -43,9 +48,9 @@ public class EndpointsAsyncTaskTest {
             }
         };
 
-        asyncTask.execute();
+        asyncTask.execute(context);
 
-        countDownLatch.await(20, TimeUnit.SECONDS);
+        countDownLatch.await();
 
     }
 
