@@ -48,7 +48,7 @@ public class EndpointsAsyncTaskTest {
             }
         };
 
-        asyncTask.execute(context);
+        asyncTask.execute(context).get();
 
         countDownLatch.await();
 
