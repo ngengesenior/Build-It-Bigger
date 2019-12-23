@@ -2,6 +2,7 @@ package com.udacity.gradle.jokes;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Joker {
     public static String getJoke() {
@@ -19,5 +20,10 @@ public class Joker {
     public static List<String> getJokes() {
         buildJokes();
         return jokes;
+    }
+
+    public static String getRandomJoke()
+    {
+        return jokes.get(new Random().nextInt(jokes.size()));
     }
 }
